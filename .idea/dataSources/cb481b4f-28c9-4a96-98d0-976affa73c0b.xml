@@ -104,7 +104,7 @@ false America/Argentina/San_Luis
 false America/Argentina/Tucuman
 false America/Argentina/Ushuaia
 false America/Aruba
-false America/Asuncion
+true America/Asuncion
 false America/Atikokan
 true America/Atka
 false America/Bahia
@@ -376,29 +376,29 @@ false Atlantic/Reykjavik
 false Atlantic/South_Georgia
 false Atlantic/St_Helena
 false Atlantic/Stanley
-false Australia/ACT
-false Australia/Adelaide
+true Australia/ACT
+true Australia/Adelaide
 false Australia/Brisbane
-false Australia/Broken_Hill
-false Australia/Canberra
-false Australia/Currie
+true Australia/Broken_Hill
+true Australia/Canberra
+true Australia/Currie
 false Australia/Darwin
 false Australia/Eucla
-false Australia/Hobart
-false Australia/LHI
+true Australia/Hobart
+true Australia/LHI
 false Australia/Lindeman
-false Australia/Lord_Howe
-false Australia/Melbourne
-false Australia/NSW
+true Australia/Lord_Howe
+true Australia/Melbourne
+true Australia/NSW
 false Australia/North
 false Australia/Perth
 false Australia/Queensland
-false Australia/South
-false Australia/Sydney
-false Australia/Tasmania
-false Australia/Victoria
+true Australia/South
+true Australia/Sydney
+true Australia/Tasmania
+true Australia/Victoria
 false Australia/West
-false Australia/Yancowinna
+true Australia/Yancowinna
 true BDST
 false BDT
 false BNT
@@ -612,7 +612,7 @@ false KRAST
 false KRAT
 false KST
 false Kwajalein
-false LHDT
+true LHDT
 false LHST
 false LIGT
 false LINT
@@ -674,7 +674,7 @@ false PST
 true PST8PDT
 false PWT
 true PYST
-false PYT
+true PYT
 true Pacific/Apia
 true Pacific/Auckland
 false Pacific/Bougainville
@@ -700,7 +700,7 @@ false Pacific/Marquesas
 false Pacific/Midway
 false Pacific/Nauru
 false Pacific/Niue
-false Pacific/Norfolk
+true Pacific/Norfolk
 false Pacific/Noumea
 false Pacific/Pago_Pago
 false Pacific/Palau
@@ -785,7 +785,7 @@ false Z
 false Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1600695757</StartupTime>
+      <StartupTime>1601994642</StartupTime>
     </root>
     <database id="2" parent="1" name="ah_casus">
       <ObjectId>16513</ObjectId>
@@ -806,7 +806,7 @@ true posixrules
     <database id="6" parent="1" name="ovchip">
       <ObjectId>24833</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2836</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4889</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="7" parent="1" name="postgres">
@@ -814,40 +814,49 @@ true posixrules
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <database id="8" parent="1" name="sales">
+    <database id="8" parent="1" name="prbed-2021-v2b-2">
+      <ObjectId>34896</ObjectId>
+      <Owner>groep2</Owner>
+    </database>
+    <database id="9" parent="1" name="sales">
       <ObjectId>25216</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <role id="9" parent="1" name="bep2-huland-casino">
+    <role id="10" parent="1" name="bep2-huland-casino">
       <ObjectId>24890</ObjectId>
       <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
     </role>
-    <role id="10" parent="1" name="pg_execute_server_program">
+    <role id="11" parent="1" name="groep2">
+      <ObjectId>34895</ObjectId>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+    </role>
+    <role id="12" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_monitor">
+    <role id="13" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_read_all_settings">
+    <role id="14" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_read_all_stats">
+    <role id="15" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_read_server_files">
+    <role id="16" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="15" parent="1" name="pg_signal_backend">
+    <role id="17" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="16" parent="1" name="pg_stat_scan_tables">
+    <role id="18" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="17" parent="1" name="pg_write_server_files">
+    <role id="19" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="18" parent="1" name="postgres">
+    <role id="20" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
@@ -856,37 +865,37 @@ true posixrules
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
-    <role id="19" parent="1" name="testnew">
+    <role id="21" parent="1" name="testnew">
       <ObjectId>25025</ObjectId>
       <CanLogin>1</CanLogin>
     </role>
-    <schema id="20" parent="6" name="information_schema">
+    <schema id="22" parent="6" name="information_schema">
       <ObjectId>13018</ObjectId>
       <StateNumber>282</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="21" parent="6" name="pg_catalog">
+    <schema id="23" parent="6" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="22" parent="6" name="public">
+    <schema id="24" parent="6" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2837</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4890</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <access-method id="23" parent="6" name="heap">
+    <access-method id="25" parent="6" name="heap">
       <ObjectId>2</ObjectId>
       <Comment>heap table access method</Comment>
       <StateNumber>1</StateNumber>
       <Handler>pg_catalog.heap_tableam_handler</Handler>
       <HandlerId>3</HandlerId>
     </access-method>
-    <access-method id="24" parent="6" name="btree">
+    <access-method id="26" parent="6" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -894,7 +903,7 @@ true posixrules
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="25" parent="6" name="hash">
+    <access-method id="27" parent="6" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -902,7 +911,7 @@ true posixrules
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="26" parent="6" name="gist">
+    <access-method id="28" parent="6" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -910,7 +919,7 @@ true posixrules
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="27" parent="6" name="gin">
+    <access-method id="29" parent="6" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -918,7 +927,7 @@ true posixrules
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="28" parent="6" name="spgist">
+    <access-method id="30" parent="6" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -926,7 +935,7 @@ true posixrules
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="29" parent="6" name="brin">
+    <access-method id="31" parent="6" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -934,7 +943,7 @@ true posixrules
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <extension id="30" parent="6" name="plpgsql">
+    <extension id="32" parent="6" name="plpgsql">
       <ObjectId>13304</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>437</StateNumber>
@@ -942,116 +951,147 @@ true posixrules
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <language id="31" parent="6" name="c"/>
-    <language id="32" parent="6" name="internal"/>
-    <language id="33" parent="6" name="plpgsql"/>
-    <language id="34" parent="6" name="sql"/>
-    <table id="35" parent="22" name="adres">
+    <language id="33" parent="6" name="c"/>
+    <language id="34" parent="6" name="internal"/>
+    <language id="35" parent="6" name="plpgsql"/>
+    <language id="36" parent="6" name="sql"/>
+    <table id="37" parent="24" name="adres">
       <ObjectId>24974</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>571</StateNumber>
+      <StateNumber>2857</StateNumber>
     </table>
-    <table id="36" parent="22" name="ov_chipkaart">
+    <table id="38" parent="24" name="ov_chipkaart">
       <ObjectId>24991</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>571</StateNumber>
+      <StateNumber>2861</StateNumber>
     </table>
-    <table id="37" parent="22" name="ov_chipkaart_product">
+    <table id="39" parent="24" name="ov_chipkaart_product">
       <ObjectId>25009</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>571</StateNumber>
     </table>
-    <table id="38" parent="22" name="product">
+    <table id="40" parent="24" name="ovchipkaart">
+      <ObjectId>26762</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2846</StateNumber>
+    </table>
+    <table id="41" parent="24" name="ovchipkaart_product">
+      <ObjectId>26767</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2845</StateNumber>
+    </table>
+    <table id="42" parent="24" name="product">
       <ObjectId>25001</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>571</StateNumber>
     </table>
-    <table id="39" parent="22" name="reiziger">
+    <table id="43" parent="24" name="product_ovchipkaart">
+      <ObjectId>26770</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2847</StateNumber>
+    </table>
+    <table id="44" parent="24" name="reiziger">
       <ObjectId>24969</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>571</StateNumber>
+      <StateNumber>2858</StateNumber>
     </table>
-    <column id="40" parent="35" name="adres_id">
+    <table id="45" parent="24" name="reiziger_ov_chipkaart">
+      <ObjectId>26818</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2866</StateNumber>
+    </table>
+    <table id="46" parent="24" name="reiziger_ovchipkaart">
+      <ObjectId>26773</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>2849</StateNumber>
+    </table>
+    <column id="47" parent="37" name="adres_id">
       <Position>1</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="41" parent="35" name="postcode">
+    <column id="48" parent="37" name="postcode">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="42" parent="35" name="huisnummer">
+    <column id="49" parent="37" name="huisnummer">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="35" name="straat">
+    <column id="50" parent="37" name="straat">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="44" parent="35" name="woonplaats">
+    <column id="51" parent="37" name="woonplaats">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="35" name="reiziger_id">
+    <column id="52" parent="37" name="reiziger_id">
       <Position>6</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="46" parent="35" name="adres_pkey">
+    <column id="53" parent="37" name="reiziger_reiziger_id">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>2857</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="54" parent="37" name="adres_pkey">
       <ObjectId>24980</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>adres_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="47" parent="35" name="adres_reiziger_id_key">
+    <index id="55" parent="37" name="adres_reiziger_id_key">
       <ObjectId>24982</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="48" parent="35" name="adres_reiziger_unique">
+    <index id="56" parent="37" name="adres_reiziger_unique">
       <ObjectId>24989</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="49" parent="35" name="adres_pkey">
+    <key id="57" parent="37" name="adres_pkey">
       <ObjectId>24981</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>adres_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>adres_pkey</UnderlyingIndexName>
     </key>
-    <key id="50" parent="35" name="adres_reiziger_id_key">
+    <key id="58" parent="37" name="adres_reiziger_id_key">
       <ObjectId>24983</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <UnderlyingIndexName>adres_reiziger_id_key</UnderlyingIndexName>
     </key>
-    <key id="51" parent="35" name="adres_reiziger_unique">
+    <key id="59" parent="37" name="adres_reiziger_unique">
       <ObjectId>24990</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <UnderlyingIndexName>adres_reiziger_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="52" parent="35" name="adres_reiziger_id_fkey">
+    <foreign-key id="60" parent="37" name="adres_reiziger_id_fkey">
       <ObjectId>24984</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
@@ -1061,56 +1101,72 @@ true posixrules
       <RefKeyName>reiziger_pkey</RefKeyName>
       <RefColNames>reiziger_id</RefColNames>
     </foreign-key>
-    <column id="53" parent="36" name="kaart_nummer">
+    <foreign-key id="61" parent="37" name="fk71r44uwqlfei0lubq416oympi">
+      <ObjectId>26808</ObjectId>
+      <StateNumber>2859</StateNumber>
+      <ColNames>reiziger_reiziger_id</ColNames>
+      <RefTableId>24969</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>reiziger</RefTableName>
+      <RefKeyName>reiziger_pkey</RefKeyName>
+      <RefColNames>reiziger_id</RefColNames>
+    </foreign-key>
+    <column id="62" parent="38" name="kaart_nummer">
       <Position>1</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="54" parent="36" name="geldig_tot">
+    <column id="63" parent="38" name="geldig_tot">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="55" parent="36" name="klasse">
+    <column id="64" parent="38" name="klasse">
       <Position>3</Position>
       <DataType>numeric(1)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="56" parent="36" name="saldo">
+    <column id="65" parent="38" name="saldo">
       <Position>4</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="57" parent="36" name="reiziger_id">
+    <column id="66" parent="38" name="reiziger_id">
       <Position>5</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="58" parent="36" name="ov_chipkaart_pkey">
+    <column id="67" parent="38" name="reiziger_reiziger_id">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>2861</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="68" parent="38" name="ov_chipkaart_pkey">
       <ObjectId>24994</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>kaart_nummer</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="59" parent="36" name="ov_chipkaart_pkey">
+    <key id="69" parent="38" name="ov_chipkaart_pkey">
       <ObjectId>24995</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>kaart_nummer</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>ov_chipkaart_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="60" parent="36" name="ov_chipkaart_reiziger_id_fkey">
+    <foreign-key id="70" parent="38" name="ov_chipkaart_reiziger_id_fkey">
       <ObjectId>24996</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
@@ -1120,33 +1176,43 @@ true posixrules
       <RefKeyName>reiziger_pkey</RefKeyName>
       <RefColNames>reiziger_id</RefColNames>
     </foreign-key>
-    <column id="61" parent="37" name="kaart_nummer">
+    <foreign-key id="71" parent="38" name="fkgt3k9d23nh25ax2nnvqyeld22">
+      <ObjectId>26823</ObjectId>
+      <StateNumber>2865</StateNumber>
+      <ColNames>reiziger_reiziger_id</ColNames>
+      <RefTableId>24969</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>reiziger</RefTableName>
+      <RefKeyName>reiziger_pkey</RefKeyName>
+      <RefColNames>reiziger_id</RefColNames>
+    </foreign-key>
+    <column id="72" parent="39" name="kaart_nummer">
       <Position>1</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="62" parent="37" name="product_nummer">
+    <column id="73" parent="39" name="product_nummer">
       <Position>2</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="63" parent="37" name="status">
+    <column id="74" parent="39" name="status">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="64" parent="37" name="last_update">
+    <column id="75" parent="39" name="last_update">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <StateNumber>571</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="65" parent="37" name="ov_chipkaart_product_pkey">
+    <index id="76" parent="39" name="ov_chipkaart_product_pkey">
       <ObjectId>25012</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>kaart_nummer
@@ -1154,7 +1220,7 @@ product_nummer</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="66" parent="37" name="ov_chipkaart_product_pkey">
+    <key id="77" parent="39" name="ov_chipkaart_product_pkey">
       <ObjectId>25013</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>kaart_nummer
@@ -1162,7 +1228,7 @@ product_nummer</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>ov_chipkaart_product_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="67" parent="37" name="ov_chipkaart_product_kaart_nummer_fkey">
+    <foreign-key id="78" parent="39" name="ov_chipkaart_product_kaart_nummer_fkey">
       <ObjectId>25014</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>kaart_nummer</ColNames>
@@ -1172,7 +1238,7 @@ product_nummer</ColNames>
       <RefKeyName>ov_chipkaart_pkey</RefKeyName>
       <RefColNames>kaart_nummer</RefColNames>
     </foreign-key>
-    <foreign-key id="68" parent="37" name="ov_chipkaart_product_product_nummer_fkey">
+    <foreign-key id="79" parent="39" name="ov_chipkaart_product_product_nummer_fkey">
       <ObjectId>25019</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>product_nummer</ColNames>
@@ -1182,94 +1248,318 @@ product_nummer</ColNames>
       <RefKeyName>product_pkey</RefKeyName>
       <RefColNames>product_nummer</RefColNames>
     </foreign-key>
-    <column id="69" parent="38" name="product_nummer">
+    <column id="80" parent="40" name="kaart_nummer">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2838</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="81" parent="40" name="geldig_tot">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>2838</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="82" parent="40" name="klasse">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2838</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="83" parent="40" name="reiziger_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2838</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="84" parent="40" name="saldo">
+      <Position>5</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2838</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <index id="85" parent="40" name="ovchipkaart_pkey">
+      <ObjectId>26765</ObjectId>
+      <StateNumber>2838</StateNumber>
+      <ColNames>kaart_nummer</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="86" parent="40" name="ovchipkaart_pkey">
+      <ObjectId>26766</ObjectId>
+      <StateNumber>2838</StateNumber>
+      <ColNames>kaart_nummer</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>ovchipkaart_pkey</UnderlyingIndexName>
+    </key>
+    <column id="87" parent="41" name="ovchipkaart_kaart_nummer">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2839</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="88" parent="41" name="producten_product_nummer">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2839</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="89" parent="41" name="fk5aop3eeuety0rjomln3k56vso">
+      <ObjectId>26783</ObjectId>
+      <StateNumber>2846</StateNumber>
+      <ColNames>ovchipkaart_kaart_nummer</ColNames>
+      <RefTableId>26762</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ovchipkaart</RefTableName>
+      <RefKeyName>ovchipkaart_pkey</RefKeyName>
+      <RefColNames>kaart_nummer</RefColNames>
+    </foreign-key>
+    <foreign-key id="90" parent="41" name="fk3ng0dvw0otja673yq9cmmgab">
+      <ObjectId>26778</ObjectId>
+      <StateNumber>2845</StateNumber>
+      <ColNames>producten_product_nummer</ColNames>
+      <RefTableId>25001</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>product_nummer</RefColNames>
+    </foreign-key>
+    <column id="91" parent="42" name="product_nummer">
       <Position>1</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="70" parent="38" name="naam">
+    <column id="92" parent="42" name="naam">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="38" name="beschrijving">
+    <column id="93" parent="42" name="beschrijving">
       <Position>3</Position>
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="72" parent="38" name="prijs">
+    <column id="94" parent="42" name="prijs">
       <Position>4</Position>
       <DataType>numeric(16,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="73" parent="38" name="product_pkey">
+    <index id="95" parent="42" name="product_pkey">
       <ObjectId>25007</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>product_nummer</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="74" parent="38" name="product_pkey">
+    <key id="96" parent="42" name="product_pkey">
       <ObjectId>25008</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>product_nummer</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>product_pkey</UnderlyingIndexName>
     </key>
-    <column id="75" parent="39" name="reiziger_id">
+    <column id="97" parent="43" name="product_product_nummer">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2840</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="98" parent="43" name="ovchipkaarten_kaart_nummer">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2840</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="99" parent="43" name="fkqjvghcnwo7r7c52pnqatvnbd0">
+      <ObjectId>26793</ObjectId>
+      <StateNumber>2848</StateNumber>
+      <ColNames>product_product_nummer</ColNames>
+      <RefTableId>25001</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>product_nummer</RefColNames>
+    </foreign-key>
+    <foreign-key id="100" parent="43" name="fk1rny2epibx4sgxjdqkgj2hft2">
+      <ObjectId>26788</ObjectId>
+      <StateNumber>2847</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <RefTableId>26762</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ovchipkaart</RefTableName>
+      <RefKeyName>ovchipkaart_pkey</RefKeyName>
+      <RefColNames>kaart_nummer</RefColNames>
+    </foreign-key>
+    <column id="101" parent="44" name="reiziger_id">
       <Position>1</Position>
       <DataType>numeric(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="76" parent="39" name="voorletters">
+    <column id="102" parent="44" name="voorletters">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="77" parent="39" name="tussenvoegsel">
+    <column id="103" parent="44" name="tussenvoegsel">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="78" parent="39" name="achternaam">
+    <column id="104" parent="44" name="achternaam">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="39" name="geboortedatum">
+    <column id="105" parent="44" name="geboortedatum">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <StateNumber>571</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="80" parent="39" name="reiziger_pkey">
+    <column id="106" parent="44" name="adres_adres_id">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>2858</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="107" parent="44" name="reiziger_pkey">
       <ObjectId>24972</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="81" parent="39" name="reiziger_pkey">
+    <key id="108" parent="44" name="reiziger_pkey">
       <ObjectId>24973</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>reiziger_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>reiziger_pkey</UnderlyingIndexName>
     </key>
+    <foreign-key id="109" parent="44" name="fkiv60yqrdjw87gxa73mi4w1h6d">
+      <ObjectId>26813</ObjectId>
+      <StateNumber>2860</StateNumber>
+      <ColNames>adres_adres_id</ColNames>
+      <RefTableId>24974</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>adres</RefTableName>
+      <RefKeyName>adres_pkey</RefKeyName>
+      <RefColNames>adres_id</RefColNames>
+    </foreign-key>
+    <column id="110" parent="45" name="reiziger_reiziger_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2862</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="111" parent="45" name="ovchipkaarten_kaart_nummer">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2862</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="112" parent="45" name="uk_mvdohwsvuhlu2sa53tlsgox7r">
+      <ObjectId>26821</ObjectId>
+      <StateNumber>2864</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="113" parent="45" name="uk_mvdohwsvuhlu2sa53tlsgox7r">
+      <ObjectId>26822</ObjectId>
+      <StateNumber>2864</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <UnderlyingIndexName>uk_mvdohwsvuhlu2sa53tlsgox7r</UnderlyingIndexName>
+    </key>
+    <foreign-key id="114" parent="45" name="fkhcym1hmbghj0rc8809xaonxy2">
+      <ObjectId>26833</ObjectId>
+      <StateNumber>2867</StateNumber>
+      <ColNames>reiziger_reiziger_id</ColNames>
+      <RefTableId>24969</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>reiziger</RefTableName>
+      <RefKeyName>reiziger_pkey</RefKeyName>
+      <RefColNames>reiziger_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="115" parent="45" name="fkj76ablutsd8c9h2ve9k74yfr5">
+      <ObjectId>26828</ObjectId>
+      <StateNumber>2866</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <RefTableId>24991</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ov_chipkaart</RefTableName>
+      <RefKeyName>ov_chipkaart_pkey</RefKeyName>
+      <RefColNames>kaart_nummer</RefColNames>
+    </foreign-key>
+    <column id="116" parent="46" name="reiziger_adres_adres_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2842</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="117" parent="46" name="ovchipkaarten_kaart_nummer">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2842</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="118" parent="46" name="uk_rl542s8g2ioh18rw1sl0w5i3t">
+      <ObjectId>26776</ObjectId>
+      <StateNumber>2844</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="119" parent="46" name="uk_rl542s8g2ioh18rw1sl0w5i3t">
+      <ObjectId>26777</ObjectId>
+      <StateNumber>2844</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <UnderlyingIndexName>uk_rl542s8g2ioh18rw1sl0w5i3t</UnderlyingIndexName>
+    </key>
+    <foreign-key id="120" parent="46" name="fk7vx107t9jlcs9coiyqm5hnkxt">
+      <ObjectId>26803</ObjectId>
+      <StateNumber>2850</StateNumber>
+      <ColNames>reiziger_adres_adres_id</ColNames>
+      <RefTableId>24969</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>reiziger</RefTableName>
+      <RefKeyName>reiziger_pkey</RefKeyName>
+      <RefColNames>reiziger_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="121" parent="46" name="fktchbbphccljnpdqxm6miifc1i">
+      <ObjectId>26798</ObjectId>
+      <StateNumber>2849</StateNumber>
+      <ColNames>ovchipkaarten_kaart_nummer</ColNames>
+      <RefTableId>26762</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>ovchipkaart</RefTableName>
+      <RefKeyName>ovchipkaart_pkey</RefKeyName>
+      <RefColNames>kaart_nummer</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

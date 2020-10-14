@@ -5,21 +5,19 @@
 
 <hibernate-configuration>
     <session-factory>
-
         <!-- Connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/ovchip</property>
         <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">VULWACHTWOORDHIERIN</property>
-
-        <!-- SQL dialect -->
-<!--        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
+        <property name="hibernate.connection.password">P-g1t@@R</property>
 
         <!-- Print executed SQL to stdout -->
         <property name="show_sql">false</property>
 
         <!-- Update database on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
 
         <!-- Annotated entity classes -->
         <mapping class="Adres"/>
